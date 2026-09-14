@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form | Project 1 - CS316</title>
+</head>
+<body>
+    <a href="index.html">Go home</a>
+    <form action="">
+        <fieldset>
+            <legend>Sign Up</legend>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="plan">Plan</label>
+            <select id="plan" name="plan">
+                <option value="free">Free</option>
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+            </select>
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="5" cols="30"></textarea>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
