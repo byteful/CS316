@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Text | Project 2 - CS316</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p::first-line {
+          text-transform: uppercase;
+        }
+
+        span {
+          opacity: 0;
+          outline: none;
+        }
+
+        span:focus {
+          opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="images.html">Images</a>
+        <a href="hidden.html">Hidden Text</a>
+    </nav>
+    <p>Lorem ipsum dolor sit amet, <span tabindex="0">consectetur</span> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span tabindex="0">nostrud</span> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in <span tabindex="0">voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    <p>Sunt in culpa qui officia <span tabindex="0">deserunt</span> mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque <span tabindex="0">laudantium</span>, totam rem aperiam.</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+  font-size: 20px;
+  background: #dfe9f5;
+  margin: 0;
+  padding: 70px 20px 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #0033a0;
+  border-bottom: 4px solid gold;
+  padding: 15px;
+}
+
+nav a {
+  margin-right: 20px;
+}
+
+a:link {
+  color: gold;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ff9ecf;
+  font-style: italic;
+  text-decoration: underline wavy;
+}
