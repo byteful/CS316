@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form - Coding Survey</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>Coding Survey</h1>
+    <p><a href="/records.html">View the Records Page</a></p>
+    <form id="surveyForm">
+      <fieldset>
+        <legend>About Your Coding</legend>
+        <p>
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName">
+        </p>
+        <p>
+          Favorite language:
+          <input type="radio" id="languageJavaScript" name="favoriteLanguage" value="JavaScript">
+          <label for="languageJavaScript">JavaScript</label>
+          <input type="radio" id="languagePython" name="favoriteLanguage" value="Python">
+          <label for="languagePython">Python</label>
+          <input type="radio" id="languageJava" name="favoriteLanguage" value="Java">
+          <label for="languageJava">Java</label>
+          <input type="radio" id="languageCpp" name="favoriteLanguage" value="C++">
+          <label for="languageCpp">C++</label>
+          <input type="radio" id="languageRust" name="favoriteLanguage" value="Rust">
+          <label for="languageRust">Rust</label>
+        </p>
+        <p>
+          <label for="editor">Preferred editor</label>
+          <select id="editor" name="editor">
+            <option value="">Choose an editor</option>
+            <option value="VS Code">VS Code</option>
+            <option value="JetBrains IDE">JetBrains IDE</option>
+            <option value="Vim">Vim</option>
+            <option value="Emacs">Emacs</option>
+          </select>
+        </p>
+        <p>
+          <label for="yearsCoding">Years of programming experience</label>
+          <input type="number" id="yearsCoding" name="yearsCoding">
+        </p>
+        <label for="project">Describe a project you have built</label>
+        <br>
+        <textarea id="project" name="project" rows="8"></textarea>
+      </fieldset>
+      <p><button type="submit">Submit Survey</button></p>
+    </form>
+    <p id="saveMessage" hidden>Your answers were saved.</p>
+    <script src="/form.js"></script>
+  </body>
+</html>
